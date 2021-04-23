@@ -27,7 +27,7 @@
 
 body {
     --primary: hsl(220, 98%, 61%);
-    font-family: 'Josefin Sans', sans-serif;
+
     line-height: 1;
     background-color: var(--gray-1);
 }
@@ -68,9 +68,9 @@ body {
 }
 
 .header .header-title h1 {
-    font-size: 26px;
+    font-size: 30px;
     color: white;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 14px;
 }
 
@@ -115,6 +115,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 
 }
 
@@ -157,8 +159,9 @@ body {
 }
 
 .content .todo-container .todo-item .left p {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 10px;
+    font-weight: 500;
     color: var(--gray-5);
     cursor: pointer;
 }
