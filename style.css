@@ -27,7 +27,7 @@
 
 body {
     --primary: hsl(220, 98%, 61%);
-
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 1;
     background-color: var(--gray-1);
 }
