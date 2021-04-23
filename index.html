@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="light-theme">
+    <div class="bg"></div>
+    <!-- <img class="bg" src="./images/bg-mobile-light.jpg" width="100%" alt="" /> -->
+    <div class="container">
+      <div class="header">
+        <div class="header-title">
+          <h1 class="title">TODO</h1>
+          <button class="theme-btn">
+            <img width="20px" src="./images/icon-moon.svg" alt="" />
+          </button>
+        </div>
+        <div class="input-container">
+          <div class="circle"></div>
+          <input
+            type="text"
+            placeholder="Create a new todo.."
+            class="todo-input"
+          />
+        </div>
+      </div>
+      <div class="content">
+        <div class="todo-container">
+          <div class="todo-item completed">
+            <div class="left">
+              <div class="circle"></div>
+              <p class="todo-text">Buy a Milk in store</p>
+            </div>
+            <img
+              src="./images/icon-cross.svg"
+              alt=""
+              width="12px"
+              height="12px"
+            />
+          </div>
+        </div>
+        <div class="footer">
+          <p class="total-todo">5 items left</p>
+          <div class="filter">
+            <a href="#" class="filter-item active">All</a>
+            <a href="#" class="filter-item">Active</a>
+            <a href="#" class="filter-item">Completed</a>
+          </div>
+          <a href="#" onclick="clearCompleted()">Clear Completed</a>
+        </div>
+      </div>
+      <div class="footer-mobile filter">
+        <a href="#" class="filter-item active">All</a>
+        <a href="#" class="filter-item">Active</a>
+        <a href="#" class="filter-item">Completed</a>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Faisal Ayash F</a>.
+    </div>
+    <script src="Todo.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
